@@ -1,0 +1,60 @@
+.nav-bar {
+   // border: 1px solid blue;
+   margin-top: 2.5%;
+   margin-bottom: 10%;
+   
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+
+   .desktop_nav {
+      @media @tablet {
+         justify-content: center;
+      }
+
+      a {
+         @media @tablet {
+            display: none;
+         }
+      }
+   }
+
+   .tablet_nav {
+      display: none;
+      margin-top: 2.5%;
+      
+      @media @tablet {
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+      }
+
+      @media @phone {
+         margin-top: 3.5%;
+      }
+   }
+
+   a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #0c084c;
+      &:hover {
+         text-decoration: underline;
+      }
+
+      @media @lgDesktop {
+         font-size: 1.8rem;
+      }
+
+      @media @smDesktop {
+         font-size: 1.6rem;
+      }
+
+      @media @tablet {
+         font-size: 1.8rem;
+      }
+   }
+}
+
